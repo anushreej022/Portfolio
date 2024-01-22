@@ -1,44 +1,287 @@
-/* External CSS file */
-
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e; /* Dark blue background color */
+    color: #fff;
     margin: 0;
-    padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+header,footer {
+    background-color: #0f4c75; /* Dark blue header color */
     padding: 20px;
     text-align: center;
 }
 
-h1 {
+header h1 {
     margin: 0;
     font-size: 2em;
 }
 
+nav {
+    margin-top: 20px;
+}
+
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the flex items horizontally */
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 1.2em;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ffd700; /* Change the color on hover, you can choose any color you like */
+nav a:hover {
+    color: #bbdefb; /* Lighter blue on hover */
 }
 
-/* ... Rest of the CSS remains unchanged ... */
+section {
+    margin: 20px;
+}
+
+
+#about {
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 350px;
+    height: 400px;
+}
+
+.text-container {
+    width: 60%;
+}
+
+.divider {
+    color: black;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #0f4c75; /* Dark blue border for images */
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 76, 117, 0.7); /* Semi-transparent dark blue background for caption */
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+button {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #0f4c75; /* Dark blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+section#technical-skills {
+    margin: 20px;
+}
+
+section#technical-skills .about-container {
+    background-color: #1a1a2e; /* Dark blue background color for the section */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section#technical-skills .header {
+    text-align: center;
+}
+
+section#technical-skills .header h1 {
+    font-size: 2em;
+    color: #4CAF50; /* Light green header color */
+}
+
+section#technical-skills .separator {
+    width: 90%;
+    border-color: #4CAF50;
+}
+
+section#technical-skills .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section#technical-skills .text-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+section#technical-skills th, section#technical-skills td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+section#technical-skills th {
+    background-color: #0f4c75; /* Dark blue header color */
+    color: #fff;
+}
+
+section#technical-skills td {
+    background-color: #1a1a2e; /* Dark blue cell color */
+    color: #fff;
+}
+
+section#about {
+    margin: 20px;
+}
+
+section#about .about-container {
+    background-color: #1a1a2e; /* Dark blue background color for the section */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section#about .header {
+    text-align: center;
+}
+
+section#about .header h1 {
+    font-size: 2em;
+    color: #4CAF50; /* Light green header color */
+}
+
+section#about .separator {
+    width: 90%;
+    border-color: #4CAF50;
+}
+
+section#about .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Add any existing styles you have */
+
+section#professional-exp {
+    margin: 20px;
+}
+
+section#professional-exp .about-container {
+    background-color: #1a1a2e; /* Dark blue background color for the section */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section#professional-exp .header {
+    text-align: center;
+}
+
+section#professional-exp .header h1 {
+    font-size: 2em;
+    color: #4CAF50; /* Light green header color */
+}
+
+section#professional-exp .separator {
+    width: 90%;
+    border-color: #4CAF50;
+}
+
+section#professional-exp .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section#professional-exp .text-container p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/* Add any existing styles you have */
+
+section#contact {
+    margin: 20px;
+}
+
+section#contact .about-container {
+    background-color: #1a1a2e; /* Dark blue background color for the section */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section#contact .header {
+    text-align: center;
+}
+
+section#contact .header h1 {
+    font-size: 2em;
+    color: #4CAF50; /* Light green header color */
+}
+
+section#contact .separator {
+    width: 90%;
+    border-color: #4CAF50;
+}
+
+section#contact .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section#contact .text-container p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
