@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a2e; /* Dark blue background color */
+    background-color: rgb(235, 229, 229); /* Dark blue background color */
     color: #fff;
     margin: 0;
 }
@@ -41,6 +41,7 @@ nav a {
 
 nav a:hover {
     color: #bbdefb; /* Lighter blue on hover */
+    text-decoration: underline;
 }
 
 section {
@@ -59,8 +60,8 @@ section {
 }
 
 .image-container img {
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 350px;
 }
 
 .text-container {
@@ -69,36 +70,6 @@ section {
 
 .divider {
     color: black;
-}
-
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-figure {
-    margin: 10px;
-    text-align: center;
-    position: relative;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #0f4c75; /* Dark blue border for images */
-    border-radius: 8px;
-    overflow: hidden; /* Hide overflowing content */
-}
-
-figcaption {
-    margin-top: 5px;
-    font-style: italic;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(15, 76, 117, 0.7); /* Semi-transparent dark blue background for caption */
 }
 
 form {
@@ -143,7 +114,7 @@ section#technical-skills .header {
     text-align: center;
 }
 
-section#technical-skills .header h1 {
+section#technical-skills .header h2 {
     font-size: 2em;
     color: #4CAF50; /* Light green header color */
 }
@@ -172,14 +143,17 @@ section#technical-skills th, section#technical-skills td {
 }
 
 section#technical-skills th {
-    background-color: #0f4c75; /* Dark blue header color */
+    background-color: #434d54; /* Dark blue header color */
     color: #fff;
+}
+tr:nth-child(even) {
+    background-color: #152ec0; /* Darker blue for even rows */
 }
 
-section#technical-skills td {
-    background-color: #1a1a2e; /* Dark blue cell color */
-    color: #fff;
-}
+td:hover {
+    background-color: #4CAF50; 
+  }
+
 
 section#about {
     margin: 20px;
@@ -195,7 +169,7 @@ section#about .header {
     text-align: center;
 }
 
-section#about .header h1 {
+section#about .header h2 {
     font-size: 2em;
     color: #4CAF50; /* Light green header color */
 }
@@ -227,7 +201,7 @@ section#professional-exp .header {
     text-align: center;
 }
 
-section#professional-exp .header h1 {
+section#professional-exp .header h2 {
     font-size: 2em;
     color: #4CAF50; /* Light green header color */
 }
@@ -264,7 +238,7 @@ section#contact .header {
     text-align: center;
 }
 
-section#contact .header h1 {
+section#contact .header h2 {
     font-size: 2em;
     color: #4CAF50; /* Light green header color */
 }
@@ -284,4 +258,93 @@ section#contact .text-container p {
     color: #fff;
     font-size: 1.2em;
     margin-bottom: 10px;
+}
+
+/* styles.css */
+
+a {
+    color: #2196F3; /* Light blue for default color */
+}
+
+a:hover {
+    color: #bbdefb; /* Lighter blue on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+p {
+    text-align: center;
+
+}
+
+section#certifications {
+    margin: 20px;
+}
+
+section#certifications .about-container {
+    background-color: #1a1a2e; /* Dark blue background color for the section */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section#certifications .header {
+    text-align: center;
+}
+
+section#certifications .header h2 {
+    font-size: 2em;
+    color: #4CAF50; /* Light green header color */
+}
+
+section#certifications .separator {
+    width: 90%;
+    border-color: #4CAF50;
+}
+
+section#certifications .content {
+    column-count: 2; /* Divide the content into two columns */
+    column-gap: 20px; /* Set the gap between columns */
+}
+
+.gallery {
+    overflow: hidden; /* Hide overflowing content */
+}
+
+figure.certification {
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    float: left; /* Float the figures to create a column layout */
+    width: calc(50% - 10px); /* Set the width of each figure to 50% of the column minus the margin */
+}
+
+figure.certification img {
+    width: 300px; /* Set a fixed width for the image */
+    height: 300px; /* Set a fixed height for the image */
+    border: 2px solid #0f4c75;
+    border-radius: 8px;
+    overflow: auto; /* Use a different overflow option, e.g., 'auto', 'scroll', 'visible' */
+    transition: transform 0.3s;
+}
+
+figure.certification:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(43, 90, 122, 0.7); /* Semi-transparent dark blue background for caption */
 }
