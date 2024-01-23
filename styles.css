@@ -348,3 +348,43 @@ figcaption {
     width: 100%;
     background-color: rgba(43, 90, 122, 0.7); /* Semi-transparent dark blue background for caption */
 }
+
+section#video {
+    margin: 20px;
+}
+
+section#video .about-container {
+    background-color: #1a1a2e; /* Dark blue background color for the section */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section#video .header {
+    text-align: center;
+}
+
+section#video .header h2 {
+    font-size: 2em;
+    color: #4CAF50; /* Light green header color */
+}
+
+section#video .separator {
+    width: 90%;
+    border-color: #4CAF50;
+}
+
+section#video .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section#video .video-container {
+    width: 70%;
+}
+
+section#video video {
+    width: 100%; /* Make the video fill its container */
+    border: 2px solid #0f4c75;
+    border-radius: 8px;
+}
