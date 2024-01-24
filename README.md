@@ -5,7 +5,7 @@
 ## Description
 Welcome to Anushree Janardhan's Portfolio – a showcase of my journey and expertise in the dynamic realm of technology and web development. As a passionate professional, I bring forth a diverse skill set, from proficiency in programming languages to hands-on experience in web development tools. Explore my technical skills, professional experiences, and a glimpse into my world of problem-solving and creativity. The portfolio also uses media queries to make the website more responsive. Let's connect and build amazing things together! 
 
-## Explanation of tags used in the website
+## Explanation of tags and properties used in the website
 
 1. **Table:** Structures data in rows and columns for organized presentation.
 2. **Form:** Gathers user input through fields, checkboxes, and buttons.
