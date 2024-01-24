@@ -11,6 +11,12 @@ header,footer {
     text-align: center;
 }
 
+#recImage {
+    width: 20px; 
+    height: 20px; 
+    margin-left: 5px; 
+}
+
 header h1 {
     margin: 0;
     font-size: 2em;
@@ -190,7 +196,6 @@ section#about .content {
     margin-top: 20px;
 }
 
-/* Add any existing styles you have */
 
 section#professional-exp {
     margin: 20px;
@@ -227,7 +232,6 @@ section#professional-exp .text-container p {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
-/* Add any existing styles you have */
 
 section#contact {
     margin: 20px;
@@ -265,7 +269,6 @@ section#contact .text-container p {
     margin-bottom: 10px;
 }
 
-/* styles.css */
 
 a {
     color: #2196F3; /* Light blue for default color */
@@ -336,7 +339,7 @@ figure.certification img {
     height: 300px; /* Set a fixed height for the image */
     border: 2px solid #0f4c75;
     border-radius: 8px;
-    overflow: auto; /* Use a different overflow option, e.g., 'auto', 'scroll', 'visible' */
+    overflow: visible; /* Use a different overflow option, e.g., 'auto', 'scroll', 'visible' */
     transition: transform 0.3s;
 }
 

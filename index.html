@@ -10,7 +10,13 @@
 <body>
     <header>
         
-        <h1>Anushree Janardhan</h1>
+        <h1>Anushree Janardhan<img src="speaker.png" alt="recording image" id="recImage" ></h1>
+        <br/>
+        
+        <audio id="Audio" controls style="display: none;">
+            <source src="audio.mp3" type="audio/mp3">
+        
+        </audio>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -21,6 +27,14 @@
         </nav>
     </header>
 
+    <script>
+        // JavaScript to handle the click event and play the audio
+        document.getElementById('recImage').addEventListener('click', function() {
+            var audio = document.getElementById('Audio');
+            audio.play();
+        });
+    </script>
+    <!-- About Me Section -->
     <section id="about">
         <div class="about-container">
             <div class="header">
@@ -47,6 +61,7 @@
         </div>
     </section>
 
+    <!-- Technical skills section -->
     <section id="technical-skills">
         <div class="about-container">
             <div class="header">
@@ -90,6 +105,7 @@
         </div>
     </section>
 
+    <!-- Professional Experience section -->
     <section id="professional-exp">
         <div class="about-container">
             <div class="header">
@@ -127,6 +143,7 @@
         </div>
     </section>
 
+    <!-- Certifications -->
     <section id="certifications">
         <div class="about-container">
             <div class="header">
@@ -142,11 +159,11 @@
                     <img src="cert2.jpg" alt="Certification 2">
                     <figcaption>Bachelors in Computer Engineering</figcaption>
                 </figure>
-                <!-- Add more figure elements for additional certifications -->
             </div>
         </div>
     </section>
     
+    <!-- Hobbies section -->
     <section id="video">
         <div class="about-container">
             <div class="header">
@@ -166,6 +183,7 @@
         </div>
     </section>
     
+    <!-- Contact section -->
     <section id="contact">
         <div class="about-container">
             <div class="header">
